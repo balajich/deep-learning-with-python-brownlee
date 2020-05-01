@@ -17,10 +17,10 @@ X = sc.fit_transform(X)
 
 # End of data preprocessing
 
-# create model
+# create model with hidden layer
 model = Sequential()
-model.add(Dense(4, input_dim=2, activation="relu", kernel_initializer="uniform"))
-model.add(Dense(2, activation="relu", kernel_initializer="uniform"))
+model.add(Dense(12, input_dim=2, activation="relu", kernel_initializer="uniform"))
+model.add(Dense(6, activation="relu", kernel_initializer="uniform"))
 model.add(Dense(1, activation="sigmoid", kernel_initializer="uniform"))
 
 # Compile model
